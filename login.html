@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="./js/login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-form">
+        <div class="card-header">
+          <h1>SIGN IN</h1>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <table>
+              <tr>
+                <td>
+                  <label for="username">Username</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    placeholder="Enter username"
+                  />
+                </td>
+              </tr>
+              <tr class="tr-alert" id="alert-username">
+                <td>&nbsp;</td>
+                <td>
+                  <label class="alert">User name cannot be empty!</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="password">Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+                </td>
+              </tr>
+              <tr class="tr-alert" id="alert-password">
+                <td>&nbsp;</td>
+                <td>
+                  <label class="alert">Password cannot be empty!</label>
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>
+                  <div class="remember">
+                    <label for="remem-pass">
+                      <span id="custom-check"></span>
+                      <input
+                        type="checkbox"
+                        id="remem-pass"
+                        name="remem-pass"
+                      />
+                      Remember me
+                    </label>
+                    <a class="forgot" href="#">Forgot password?</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="tr-alert" id="alert-wrong-account">
+                <td>&nbsp;</td>
+                <td>
+                  <label class="alert"
+                    >User name or password is not correct!!!</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>
+                  <button type="submit" id="btn">Login</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

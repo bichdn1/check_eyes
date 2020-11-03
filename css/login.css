@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 900;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-form {
+  width: 40rem;
+  background-color: rgb(206, 206, 206);
+  /* border-radius: 1rem; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 7rem;
+  background-color: gray;
+}
+
+.card-body {
+  padding: 2rem 2rem 3rem;
+  background-color: #fff;
+}
+
+table,
+tr {
+  width: 100%;
+}
+
+td {
+  padding-bottom: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.tr-alert {
+  display: none;
+}
+
+.alert {
+  color: #f00;
+}
+
+#alert-wrong-account {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 5px 5px;
+  border: none;
+  border-bottom: 1px solid rgb(107, 106, 106);
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember label {
+  display: flex;
+  align-items: center;
+}
+
+#remem-pass {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.forgot {
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+}
+
+a:hover {
+  color: rgb(75, 197, 75);
+}
+
+#btn {
+  display: block;
+  padding: 0.7rem 2.5rem;
+  margin-top: 1rem;
+  background-color: rgb(3, 133, 42);
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+#btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 680px) {
+  .card-form {
+    margin: auto 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .remember {
+    flex-direction: column;
+  }
+
+  .forgot {
+    margin-top: 1rem;
+  }
+}
